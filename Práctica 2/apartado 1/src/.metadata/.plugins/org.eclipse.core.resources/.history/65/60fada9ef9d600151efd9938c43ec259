@@ -1,0 +1,12 @@
+package practica2;
+
+public abstract class Expresion {
+	public abstract double calcular();
+	public abstract boolean isValida();
+	public boolean isMayor(Expresion expresion){
+		if(this.calcular() > expresion.calcular())
+			return true;
+		else
+			return false;
+	}
+}

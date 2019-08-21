@@ -1,0 +1,18 @@
+package practica2;
+
+public class Valor extends Expresion {
+private double valor;
+public double calcular(){
+	return getValor();
+}
+public boolean isValida(){
+	return true;
+}
+public double getValor(){
+	return this.valor;
+}
+
+public Valor(double v){
+	this.valor=v;
+}
+}

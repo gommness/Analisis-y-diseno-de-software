@@ -1,0 +1,5 @@
+package practica2;
+
+public abstract class Unaria extends Operador {
+protected Expresion operador;
+}

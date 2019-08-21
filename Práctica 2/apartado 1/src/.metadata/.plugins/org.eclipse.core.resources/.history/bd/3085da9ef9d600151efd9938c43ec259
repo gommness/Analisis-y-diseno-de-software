@@ -1,0 +1,14 @@
+package practica2;
+
+public class abstract Binaria extends Operador {
+	
+	protected Expresion[] operadores = new Expresion[2];
+	
+	public boolean isValida(){
+	if(operadores[0].isValida() && operadores[1].isValida())
+		return true;
+	else
+		return false;
+}
+
+}

@@ -1,0 +1,7 @@
+package practica2;
+
+public class abstract Operador extends Expresion {
+public boolean isValida(){
+	if()
+}
+}

@@ -1,0 +1,21 @@
+package practica2;
+
+public class Suma extends Binaria {
+	
+public Suma(Expresion e1, Expresion e2){
+	this.operadores[0] = e1;
+	this.operadores[1] = e2;
+}
+	
+public double calcular(){
+	double s1 = this.getSumando1().calcular();
+	double s2 = this.getSumando2().calcular();
+	return s1+s2;
+}
+public Expresion getSumando1(){
+	return super.operadores[0];
+}
+public Expresion getSumando2(){
+	return super.operadores[1];
+}
+}

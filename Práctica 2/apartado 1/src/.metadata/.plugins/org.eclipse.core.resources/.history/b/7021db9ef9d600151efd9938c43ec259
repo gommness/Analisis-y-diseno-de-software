@@ -1,0 +1,22 @@
+package practica2;
+
+public class Logaritmo extends Unaria {
+	
+	public Logaritmo(Expresion e){
+		this.operador = e;
+	}
+	
+public double calcular(){
+	return Math.log(this.getOperando().calcular());
+}
+public boolean isValida(){
+	Expresion valida = this.getOperando();
+	if(valida.calcular()<=0)
+		return false;
+	else
+		return true;
+}
+public Expresion getOperando(){
+	return super.operador;
+}
+}

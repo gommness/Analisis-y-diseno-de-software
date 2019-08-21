@@ -1,0 +1,21 @@
+package practica2;
+
+public class Division extends Binaria {
+	
+	public Division(Expresion e1, Expresion e2){
+		this.operadores[0] = e1;
+		this.operadores[1] = e2;
+	}
+	
+	public double calcular(){
+		double d1 = this.getDividendo().calcular();
+		double d2 = this.getDivisor().calcular();
+		return d1/d2;
+	}
+	public Expresion getDividendo(){
+		return super.operadores[0];
+	}
+	public Expresion getDivisor(){
+		return super.operadores[1];
+	}
+}
